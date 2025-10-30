@@ -1,0 +1,10 @@
+0 black
+1 blue
+2 cyan
+3 gray
+4 green
+5 orange
+6 purple
+7 red
+8 white
+9 yellow
