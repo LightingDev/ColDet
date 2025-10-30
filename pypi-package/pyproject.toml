@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coldet"
+version = "0.1.0"
+description = "Color/object detection package powered by Keras and Gradio"
+authors = [{ name = "Yixuan" }]
+dependencies = [
+    "tensorflow",
+    "opencv-python",
+    "numpy",
+    "pillow",
+    "gradio"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+coldet = "coldet.infer:main"
