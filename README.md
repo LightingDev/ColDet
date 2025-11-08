@@ -21,65 +21,64 @@
 
 🎯 ColDet — Color-Based Detection with Deep Learning
 
-ColDet is a compact deep learning project that identifies the dominant color in the center of an image.
-It’s powered by a simple Keras model saved in .h5 format, making it lightweight, easy to integrate, and fast to deploy on any platform that supports TensorFlow.
+ColDet is a sleek, lightweight deep learning tool designed to detect the dominant color in the center of an image. It leverages a .h5 Keras model for quick, cross-platform deployment.
 
 ⸻
 
-🧠 What It Does
-
-ColDet looks at the center region of an input image and predicts what color is most present there.
-You can use it for:
-	•	Detecting object color in simple scenes
-	•	Building color-based sorting systems
-	•	Real-time color recognition in robotics or automation projects
+🧠 Key Features
+	•	Center Color Detection: Focuses on the image center to determine the main color.
+	•	Fast & Lightweight: Compact .h5 model for instant predictions.
+	•	Real-Time Applications: Perfect for robotics, automation, or color-based sorting.
 
 ⸻
 
 ⚙️ How It Works
-	1.	Input:
-You feed in an image through the model or demo interface.
-	2.	Processing:
-The system crops the central portion of the image, normalizes pixel values, and feeds it into a trained .h5 model.
-	3.	Prediction:
-The neural network predicts the main color at the image center (e.g., red, green, blue, etc.) and outputs the confidence score.
+	1.	Input: Provide an image through the demo or your local script.
+	2.	Processing: The system crops the central area, normalizes pixel values, and feeds it into the trained .h5 model.
+	3.	Prediction: Outputs the dominant color at the image center with a confidence score.
 
 ⸻
 
-🚀 Try It Online
+🚀 Try the Live Demo
 
-👉 Live Demo on Hugging Face￼
-You can upload your own images or use sample ones to see how ColDet identifies the center color instantly.
+Upload your own images or experiment with sample images to see ColDet in action instantly.
 
 ⸻
 
 🧩 Tech Stack
-	•	TensorFlow / Keras — model training and inference (.h5 format)
-	•	Python — backend logic
-	•	Gradio — for the demo UI
-	•	NumPy / OpenCV — preprocessing and color extraction
+
+Technology	Purpose
+TensorFlow / Keras	Model training and inference (.h5)
+Python	Backend logic
+Gradio	Demo UI
+NumPy / OpenCV	Image preprocessing and color extraction
+
 
 ⸻
 
 💾 Model Info
-	•	Model file: coldet_model.h5
+	•	File: coldet_model.h5
 	•	Input: Image (H, W, 3)
-	•	Output: Predicted color label + confidence score
-	•	Trained on: A dataset of labeled color samples
+	•	Output: Predicted color label + confidence
+	•	Trained On: Labeled color sample dataset
 
 ⸻
 
-🔧 Run Locally
+🔧 Local Setup
 
 git clone https://github.com/LightingDev/ColDet.git
 cd ColDet
 pip install -r requirements.txt
 python main.py
 
-Place your coldet_model.h5 file in the project root before running.
+Make sure your coldet_model.h5 file is placed in the project root before running.
 
 ⸻
 
 📜 License
 
-Apache2.0 License — Read LISENCE file for terms and conditions.
+Apache 2.0 Lisence — Read LISENCE file for terms and conditions.
+
+⸻
+
+Designed for developers, researchers, and hobbyists seeking fast, intuitive color detection tools.
